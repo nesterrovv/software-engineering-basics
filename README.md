@@ -1,4 +1,4 @@
-# Software-engineering-basics - my implimentation of a course "Basics of software engineering" at ITMO University, 2nd year
+# Software engineering basics - my implimentation of a course "Basics of software engineering" at ITMO University, 2nd year
 
 ## Course description
 There are 4 labs to complete in this course. It is planned to publish all 4 solved laboratory works, 
