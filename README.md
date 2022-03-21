@@ -25,7 +25,7 @@ For functional requirements, you need to create UML UseCase diagrams that descri
 ## Lab work #2 - variant 1422
 ***Task:***
 
-Configure the svn and git repositories in your home directory and upload the initial revision of the source files to them (according to the given option).
+Configure the svn and git repositories in your home directory and upload [the initial revision of the source files](https://github.com/nesterrovv/software-engineering-basics/blob/master/images/lab2-schema-revesion.png) to them (according to the given option).
 Reproduce the sequence of commands for the svn and git version control systems that perform the operations on the source code shown in the flowchart.
 When composing a sequence of commands, the following conditions must be taken into account:
 
