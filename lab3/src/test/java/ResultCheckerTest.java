@@ -1,9 +1,9 @@
 import checkers.ResultChecker;
-import com.lab2.servlets.AreaCheckServlet;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class AreaCheckServletTest {
+import org.junit.Test;
+import static org.junit.Assert.assertArrayEquals;
+
+public class ResultCheckerTest {
 
     @Test
     public void testFirstCoordinateArea() {
@@ -22,7 +22,7 @@ public class AreaCheckServletTest {
 
     @Test
     public void testSecondCoordinateArea() {
-        double[] xValues = {0, 0, 1, 1, 2, 2};
+        double[] xValues = {0, 0, 1, -1, -2, -2};
         double[] yValues = {0, 1, 0, 1, 2.5, 2.5};
         double[] rValues = {1, 1, 1, 1, 3.0, 2.0};
 
@@ -37,11 +37,11 @@ public class AreaCheckServletTest {
 
     @Test
     public void testThirdCoordinateArea() {
-        double[] xValues = {0, 0, -1, 1, 3};
-        double[] yValues = {0, -1, 0, -0.25, 3};
-        double[] rValues = {1, 2, 1, 3, 3.0, 1};
-        boolean[] expected = {true, true, true, true, false};
-        boolean[] found = new boolean[5];
+        double[] xValues = {0, 0, -1, -3};
+        double[] yValues = {0, -1, -0.25, -3};
+        double[] rValues = {1, 2, 1, 3.0, 3};
+        boolean[] expected = {true, true, false, true};
+        boolean[] found = new boolean[4];
 
         for (int i = 0; i < xValues.length; i++) {
             found[i] = ResultChecker.checkResult(xValues[i], yValues[i], rValues[i]);
@@ -59,7 +59,7 @@ public class AreaCheckServletTest {
         boolean[] found = new boolean[5];
 
         for (int i = 0; i < xValues.length; i++) {
-            found[i] = new AreaCheckServlet().checkResult(xValues[i], yValues[i], rValues[i]);
+            found[i] = ResultChecker.checkResult(xValues[i], yValues[i], rValues[i]);
         }
         assertArrayEquals(expected, found);
     }

@@ -1,0 +1,148 @@
+body {
+    background: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.header {
+    background-color: navy;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.border1{
+    padding: 1%;
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    float: left;
+}
+
+.border2{
+    padding: 1%;
+    float: left;
+}
+.header_text{
+    color: #FFFFFF;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 13px;
+    margin-top: 0;
+}
+
+/* селектор псевдоэлемента */
+.button_clear:after {
+    content: "Проверка на каскадность.";
+}
+.button_clear:after {
+    content: "313318";
+}
+
+
+/* селектор атрибута */
+button[class = "submit"]{
+    font-weight: 700;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+    background: navy;
+}
+button.submit:hover {
+    background: navy;
+}
+
+.container {
+    margin: auto auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    background: #FFFFFF;
+    float: left;
+    width: 25%;
+    height: 500px;
+}
+
+.pic{
+    width: 100%;
+}
+
+.content {
+    float: right;
+    width: 75%;
+    height: 280px;
+}
+
+
+#formX{
+    float: left;
+    padding-right: 20px;
+}
+
+.form{
+    float: left;
+    padding-right: 20px;
+}
+
+.error_text {
+    color: red;
+    font-size: 12px;
+}
+
+.selectX{
+    padding: 5%;
+    float: top;
+    font-size: 16px;
+}
+/* селектор идентификатора */
+#outputTable {
+    margin-top: 72px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 90%;
+
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: navy;
+    color: #ffffff;
+    border: 16px solid navy;
+    border-radius: 10px;
+}
+
+.disabled_1{
+    font-weight: 700;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+    background: rgb(107, 97, 99);
+}
+.disabled_1:hover {
+    background: rgb(35, 32, 33);
+}
+
+.input_number{
+    padding: 2%;
+    font-size: 16px;
+}
+
+th {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+
+}
+td {
+    background: navy;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons{
+    padding-top: 3%;
+}
