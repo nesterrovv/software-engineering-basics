@@ -1,0 +1,116 @@
+/*Header*/
+header {
+    font-family: monospace;
+}
+.header_content {
+    width: 100%;
+    height: 10%;
+
+    margin-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 36px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+
+    border-bottom: black 1px solid;
+}
+
+.header_content div {
+    color: black;
+    font-size: 22px;
+}
+
+.header_content :hover {
+    color: darkred;
+}
+/*Form*/
+form {
+    font-family: monospace;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.selectors {
+    width: 60%;
+}
+.selectors > * {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1%;
+    margin-bottom: 32px;
+}
+
+.checkbox-with-label {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-right: 2%;
+}
+.radio-with-label:last-child {
+    padding-right: 0;
+}
+.x-selector, .y-selector, .r-selector {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+}
+.svg-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.selector-description {
+    padding-right: 20%;
+    align-self: center;
+}
+
+button {
+    width: 50%;
+}
+
+button:active {
+    background-color: white;
+}
+
+.task-image {
+    width: 190px;
+    height: 190px;
+    margin-right: 10%;
+}
+
+/*Table*/
+#results {
+    width: 50%;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+
+    border-radius: 4px;
+
+    font-family: monospace;
+    font-size: 16px;
+}
+
+th, td {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
