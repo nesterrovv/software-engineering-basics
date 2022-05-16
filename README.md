@@ -58,4 +58,4 @@ a separate parameter file; MANIFEST.MF should contain information about the vers
 3. **clean** — remove compiled project classes and all temporary files (if any).
 4. **test** — run the project's junit tests. Before running the tests, you need to build the project (build target).
 5. **xml** — validation of all xml files in the project.
-6. **report** — in case of successful tests, saves the junit report in xml format, adds it to the svn repository and commits.
+6. **report** — in case of successful tests, saves the junit report in xml format, adds it to the git repository and commits.
