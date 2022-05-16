@@ -1,2 +1,8 @@
 *.doc
 *.docx
+*.idea
+*.idea/
+*.iml
+pom.xml
+lib/*
+*lib/
