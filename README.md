@@ -44,7 +44,7 @@ When composing a sequence of commands, the following conditions must be taken in
 **Task:**
 
 Write a script for the [Apache Ant](https://ant.apache.org/) utility that implements compilation, testing, and packaging into a jar-archive of the project 
-code from [laboratory work #5](https://github.com/nesterrovv/Programming/tree/main/Lab5) in the "Programming" discipline.
+code from [laboratory work #2](https://github.com/nesterrovv/web-programming/lab2) in the "Web-programming" discipline.
 
 My assignment is slightly different from the options given by my classmates due to the fact that [laboratory work #3](http://se.ifmo.ru/courses/web#labs)  in the "Web Programming" discipline (which everyone is invited to test) is not yet ready for me, since I recently transferred to this faculty and have not yet managed to pass the necessary laboratory work. However, according to the teacher, you can do the task on any program with some kind of interactive, so I will do it on the specified one.
 
@@ -59,3 +59,30 @@ a separate parameter file; MANIFEST.MF should contain information about the vers
 4. **test** — run the project's junit tests. Before running the tests, you need to build the project (build target).
 5. **xml** — validation of all xml files in the project.
 6. **report** — in case of successful tests, saves the junit report in xml format, adds it to the git repository and commits.
+
+## Lab work #4 — variant 1439
+**Task:**
+
+**1. For your program from [laboratory work #2](https://github.com/nesterrovv/web-programming/lab2) in the discipline "Web-programming", implement:**
+
+* An MBean that counts the total number of points set by the user, as well as the number of points that are out of scope. In case the user made 3 "misses" in a row, the designed MBean should send a notification about this event.
+* An MBean that defines the average interval between user clicks on the coordinate plane.
+
+**2. Use the JConsole utility to monitor the program:**
+
+* Take readings of the MBean classes developed during task 1.
+
+* Determine the names of all threads that run when the program starts.
+
+**3. Use the VisualVM utility to monitor and profile the program:**
+
+* Plot the MBeans developed in Task 1 over time.
+* Determine the name of the class whose objects occupy the largest amount of JVM memory; define a custom class in which instances these objects reside.
+
+**4. Use the VisualVM utility and the NetBeans IDE, Eclipse, or Idea profiler to isolate and fix performance issues in the program. Based on the results of localization and elimination of the problem, it is necessary to draw up a report, which should contain the following information:**
+
+* Description of the identified problem.
+* Description of ways to eliminate the identified problem.
+* A detailed (with screenshots) description of the algorithm of actions that made it possible to identify and localize the problem.
+
+The student must ensure that the process of searching and locating the problem can be reproduced at the request of the teacher.
